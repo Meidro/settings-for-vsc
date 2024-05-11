@@ -1,0 +1,142 @@
+{
+  "editor.tabSize": 2,
+  "editor.wordWrapColumn": 120,
+  "editor.wordWrap": "on",
+  "diffEditor.wordWrap": "on",
+  "editor.folding": false,
+  "editor.insertSpaces": false,
+  "editor.smoothScrolling": true,
+  "editor.minimap.enabled": false,
+  "editor.detectIndentation": true,
+  "editor.suggestSelection": "first",
+  "editor.fontWeight": "500",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": false,
+  "editor.unicodeHighlight.nonBasicASCII": false,
+  "editor.stickyScroll.enabled": false,
+  "editor.linkedEditing": true,
+  "editor.renderControlCharacters": false,
+  "editor.quickSuggestionsDelay": 0,
+
+  "html.autoClosingTags": true,
+  "javascript.autoClosingTags": true,
+  "typescript.autoClosingTags": true,
+
+  "editor.glyphMargin": false,
+  "editor.scrollbar.horizontal": "hidden",
+
+  "workbench.productIconTheme": "material-product-icons",
+  "workbench.activityBar.location": "top",
+  "workbench.colorTheme": "Dracula",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "none",
+  "workbench.editorAssociations": {"*.dat": "default", "*.db": "default"},
+  "workbench.layoutControl.enabled": false,
+
+  "window.density.editorTabHeight": "compact",
+  "window.commandCenter": false,
+
+  "editor.cursorBlinking": "expand",
+  "editor.cursorStyle": "line-thin",
+  "editor.cursorSmoothCaretAnimation": "explicit",
+
+  "editor.fontSize": 15,
+  "editor.lineHeight": 24,
+  "editor.fontLigatures": true,
+  "editor.fontFamily": "'Monaspace Neon', MonoLisa, Iosevka, Consolas, 'Courier New', monospace",
+  "editor.inlayHints.fontFamily": "PragmataPro",
+
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+
+  "prettier.semi": true,
+  "prettier.singleQuote": true,
+  "prettier.jsxSingleQuote": true,
+  "prettier.bracketSpacing": false,
+
+  "liveSassCompile.settings.generateMap": false,
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/css"
+    }
+  ],
+  "liveServer.settings.donotShowInfoMsg": true,
+  "ecsstractor_port.brackets_newline_after": false,
+  "ecsstractor_port.indentation": " ",
+  "ecsstractor_port.empty_line_before_nested_selector": false,
+
+  "prettier.printWidth": 130,
+  "scss.lint.emptyRules": "ignore",
+  "prettier.tabWidth": 2,
+  "prettier.vueIndentScriptAndStyle": true,
+  "ecsstractor_port.bem_nesting": true,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "liveSassCompile.settings.autoprefix": ["> 1%", "last 5 versions"],
+
+  "vscodeGoogleTranslate.preferredLanguage": "English",
+
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "breadcrumbs.showArrays": false,
+  "breadcrumbs.enabled": false,
+
+  "liveServer.settings.donotVerifyTags": true,
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "settings": {
+          "fontStyle": "italic"
+        },
+        "scope": ["comment", "entity.name.type.class", "keyword", "constant", "storage.modifier", "storage.type"]
+      },
+      {
+        "settings": {
+          "fontStyle": ""
+        },
+        "scope": ["invalid", "keyword.operator", "constant.numeric", "keyword.other"]
+      }
+    ]
+  }
+}
