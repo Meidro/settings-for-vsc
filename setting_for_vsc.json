@@ -103,9 +103,9 @@
     "terminal.integrated.allowedLinkSchemes": ["file", "http", "https", "mailto", "vscode", "vscode-insiders", "docker-desktop"],
 
     // Themes
-    "workbench.colorTheme": "Dracula Dark+",
+    "workbench.colorTheme": "Dracula Theme",
     "editor.tokenColorCustomizations": {
-        "[Dracula Dark+]": {
+        "[Dracula Theme]": {
             "textMateRules": [
                 {
                     "scope": ["keyword.control", "storage.type", "constant"],
