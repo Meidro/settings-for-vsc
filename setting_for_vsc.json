@@ -11,7 +11,6 @@
     // Redactor
     "vscodeGoogleTranslate.preferredLanguage": "English",
     "editor.minimap.enabled": false,
-    "editor.fontSize": 15,
     "editor.find.seedSearchStringFromSelection": "selection",
     "editor.autoClosingComments": "always",
     "editor.autoClosingQuotes": "always",
@@ -36,7 +35,6 @@
     "editor.smoothScrolling": true,
     "editor.detectIndentation": true,
     "editor.suggestSelection": "first",
-    "editor.fontWeight": "500",
     "editor.formatOnPaste": false,
     "editor.unicodeHighlight.nonBasicASCII": false,
     "editor.linkedEditing": true,
@@ -46,12 +44,20 @@
     "editor.cursorBlinking": "expand",
     "editor.cursorStyle": "line-thin",
     "editor.cursorSmoothCaretAnimation": "explicit",
-    "editor.lineHeight": 24,
+
+    // Font
+    "editor.fontFamily": "Consolas, 'Courier New', monospace",
+    "editor.fontSize": 16,
+    "editor.fontWeight": "500",
+    "editor.lineHeight": 1.5,
+    "editor.letterSpacing": 0.5,
     "editor.fontLigatures": true,
-    "editor.fontFamily": "'Monaspace Neon', MonoLisa, Iosevka, Consolas, 'Courier New', monospace",
+
     "editor.inlayHints.fontFamily": "PragmataPro",
     "editor.defaultFoldingRangeProvider": "ms-python.black-formatter",
     "editor.formatOnSave": true,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": "active",
     "search.defaultViewMode": "tree",
     "debug.inlineValues": "on",
     "debug.terminal.clearBeforeReusing": true,
@@ -101,6 +107,7 @@
     // Additional settings
     "editor.inlineSuggest.showToolbar": "always",
     "terminal.integrated.allowedLinkSchemes": ["file", "http", "https", "mailto", "vscode", "vscode-insiders", "docker-desktop"],
+    "files.associations": {"*.json": "jsonc"},
 
     // Themes
     "workbench.colorTheme": "Dracula Theme",
@@ -112,7 +119,7 @@
                     "settings": {"foreground": "#ff79c6", "fontStyle": "italic bold"}
                 },
                 {
-                    "scope": ["comment"],
+                    "scope": "comment",
                     "settings": {"foreground": "#ff5555", "fontStyle": "italic"}
                 },
                 {
@@ -120,11 +127,11 @@
                     "settings": {"foreground": "#8be9fd", "fontStyle": "italic bold"}
                 },
                 {
-                    "scope": ["keyword.operator"],
+                    "scope": "keyword.operator",
                     "settings": {"foreground": "#ff79c6", "fontStyle": "bold"}
                 },
                 {
-                    "scope": ["constant.numeric"],
+                    "scope": "constant.numeric",
                     "settings": {"foreground": "#bd93f9", "fontStyle": "italic"}
                 }
             ]
@@ -145,7 +152,8 @@
         "terminal.ansiBrightRed": "#ff4500",
         "terminal.ansiBrightBlue": "#1b71d4",
         "editor.background": "#282a36",
-        "editor.lineHighlightBackground": "#343333"
+        "editor.lineHighlightBackground": "#343333",
+        "editorBracketHighlight.foreground1": "#f1fa8c"
     },
 
     "html.autoClosingTags": true,
