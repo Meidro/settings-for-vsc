@@ -9,7 +9,6 @@
     "terminal.integrated.defaultProfile.windows": "PowerShell",
 
     // Redactor
-    "vscodeGoogleTranslate.preferredLanguage": "English",
     "editor.minimap.enabled": false,
     "editor.find.seedSearchStringFromSelection": "selection",
     "editor.autoClosingComments": "always",
@@ -46,7 +45,7 @@
     "editor.cursorSmoothCaretAnimation": "explicit",
 
     // Font
-    "editor.fontFamily": "Consolas, 'Courier New', monospace",
+    "editor.fontFamily": "Consolas,'Courier New', monospace",
     "editor.fontSize": 16,
     "editor.fontWeight": "500",
     "editor.lineHeight": 1.5,
@@ -93,11 +92,12 @@
     // Python
     "python.languageServer": "Pylance",
     "python.analysis.diagnosticMode": "workspace",
+    "python.analysis.displayEnglishDiagnostics": true,
     "python.analysis.autoSearchPaths": true,
     "python.defaultInterpreterPath": "c:\\Program Files\\Python313\\python.exe",
     "python.createEnvironment.trigger": "off",
     "python.analysis.importFormat": "absolute",
-    "python.analysis.completeFunctionParens": true,
+    "python.analysis.completeFunctionParens": false,
     "python.analysis.indexing": true,
     "python.analysis.inlayHints.callArgumentNames": "off",
     "python.analysis.inlayHints.variableTypes": false,
@@ -110,49 +110,62 @@
     "files.associations": {"*.json": "jsonc"},
 
     // Themes
-    "workbench.colorTheme": "Dracula Theme",
+    "workbench.colorTheme": "Monokai",
     "editor.tokenColorCustomizations": {
-        "[Dracula Theme]": {
+        "[Monokai]": {
             "textMateRules": [
                 {
-                    "scope": ["keyword.control", "storage.type", "constant"],
+                    "scope": ["keyword.control", "keyword.operator", "storage.type"],
                     "settings": {"foreground": "#ff79c6", "fontStyle": "italic bold"}
                 },
                 {
                     "scope": "comment",
-                    "settings": {"foreground": "#ff5555", "fontStyle": "italic"}
+                    "settings": {"foreground": "#8b0000", "fontStyle": "italic bold"}
                 },
                 {
-                    "scope": ["constant", "entity.name.type", "storage.modifier"],
-                    "settings": {"foreground": "#8be9fd", "fontStyle": "italic bold"}
+                    "scope": "entity.name.type",
+                    "settings": {"foreground": "#8be9fd", "fontStyle": "italic"}
                 },
                 {
-                    "scope": "keyword.operator",
-                    "settings": {"foreground": "#ff79c6", "fontStyle": "bold"}
+                    "scope": "variable.other.readwrite",
+                    "settings": {"foreground": "#e4e4e4", "fontStyle": ""}
+                },
+                {
+                    "scope": ["variable.other", "constant"],
+                    "settings": {"foreground": "#bd93f9", "fontStyle": "italic bold"}
                 },
                 {
                     "scope": "constant.numeric",
-                    "settings": {"foreground": "#bd93f9", "fontStyle": "italic"}
+                    "settings": {"foreground": "#bd93f9", "fontStyle": ""}
                 }
-            ]
-        },
-        "variables": "#e4e4e4",
-        "types": "#8be9fd",
-        "functions": "#50fa7b",
-        "comments": "#ff5555",
-        "numbers": "#bd93f9",
-        "strings": "#f1fa8c"
+            ],
+            "variables": "#e4e4e4",
+            "types": "#8be9fd",
+            "functions": "#50fa7b",
+            "comments": "#8b0000",
+            "numbers": "#bd93f9",
+            "strings": "#f1fa8c"
+        }
     },
 
+    //  [Monokai]
     "workbench.colorCustomizations": {
         "terminal.foreground": "#e5e4e4",
         "terminal.background": "#0e0e0e",
-        "terminalCursor.background": "#cc0a0a",
-        "terminal.ansiBrightGreen": "#50fa7b",
+        "terminalCursor.foreground": "#cc0a0a",
+        "terminal.ansiBrightGreen": "#15e815",
         "terminal.ansiBrightRed": "#ff4500",
         "terminal.ansiBrightBlue": "#1b71d4",
-        "editor.background": "#282a36",
+        "editor.background": "#151515",
+        "editor.selectionBackground": "#87777785",
         "editor.lineHighlightBackground": "#343333",
+        "editorCursor.foreground": "#ffcc00",
+        "sideBar.background": "#080808",
+        "sideBar.foreground": "#b7c299",
+        "activityBar.background": "#202020",
+        "activityBar.foreground": "#cccccc",
+        "statusBar.background": "#151515",
+        "statusBar.foreground": "#d3d3d3",
         "editorBracketHighlight.foreground1": "#f1fa8c"
     },
 
