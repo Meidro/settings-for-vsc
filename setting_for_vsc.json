@@ -46,6 +46,7 @@
     "editor.guides.bracketPairs": "active",
     "editor.formatOnSave": true,
     "editor.formatOnPaste": false,
+    "editor.inlineSuggest.showToolbar": "always",
 
     "explorer.autoReveal": false,
     "explorer.compactFolders": false,
@@ -182,7 +183,29 @@
     "typescript.autoClosingTags": true,
 
     "emmet.includeLanguages": {
-        "javascript": "javascriptreact"
+        "javascript": "javascriptreact",
+        "django-html": "html"
+    },
+
+    "files.associations": {
+        "*.json": "jsonc",
+        ".pylintrc": "ini",
+        "**/*.html": "html",
+        "**/templates/*/*.html": "django-html",
+        "**/templates/*/*/*.html": "django-html",
+        "**/templates/*": "django-txt",
+        "**/requirements{/**,*}.{txt,in}": "pip-requirements"
+    },
+
+    "django.snippets.exclude": ["cms", "wagtail"],
+
+    "[django-html]": {
+        "breadcrumbs.showClasses": true,
+        "editor.quickSuggestions": {
+            "other": true,
+            "comments": true,
+            "strings": true
+        }
     },
 
     "liveSassCompile.settings.generateMap": false,
@@ -231,11 +254,7 @@
     },
 
     // Other settings
-    "editor.inlineSuggest.showToolbar": "always",
-    "files.associations": {
-        "*.json": "jsonc",
-        ".pylintrc": "ini"
-    },
+
     "search.defaultViewMode": "tree",
     "debug.inlineValues": "on",
     "debug.terminal.clearBeforeReusing": true,
