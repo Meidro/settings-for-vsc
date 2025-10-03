@@ -7,6 +7,7 @@
     "terminal.integrated.enableFileLinks": "off",
     "terminal.integrated.scrollback": 50,
     "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "terminal.integrated.allowedLinkSchemes": ["file", "http", "https", "mailto", "vscode", "vscode-insiders", "docker-desktop"],
 
     // Redactor
     "editor.minimap.enabled": false,
@@ -14,7 +15,6 @@
     "editor.autoClosingComments": "always",
     "editor.autoClosingQuotes": "always",
     "editor.definitionLinkOpensInPeek": true,
-    "explorer.autoReveal": false,
     "editor.hover.delay": 1000,
     "editor.stickyScroll.enabled": false,
     "editor.scrollbar.horizontal": "visible",
@@ -28,13 +28,11 @@
     "editor.tabSize": 4,
     "editor.wordWrapColumn": 120,
     "editor.wordWrap": "on",
-    "diffEditor.wordWrap": "on",
     "editor.folding": false,
     "editor.insertSpaces": false,
     "editor.smoothScrolling": true,
     "editor.detectIndentation": true,
     "editor.suggestSelection": "first",
-    "editor.formatOnPaste": false,
     "editor.unicodeHighlight.nonBasicASCII": false,
     "editor.linkedEditing": true,
     "editor.renderControlCharacters": false,
@@ -43,6 +41,15 @@
     "editor.cursorBlinking": "expand",
     "editor.cursorStyle": "line-thin",
     "editor.cursorSmoothCaretAnimation": "explicit",
+    "editor.defaultFoldingRangeProvider": "ms-python.black-formatter",
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": "active",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": false,
+
+    "explorer.autoReveal": false,
+    "explorer.compactFolders": false,
+    "diffEditor.wordWrap": "on",
 
     // Font
     "editor.fontFamily": "Consolas,'Courier New', monospace",
@@ -51,19 +58,8 @@
     "editor.lineHeight": 1.5,
     "editor.letterSpacing": 0.5,
     "editor.fontLigatures": true,
-
     "editor.inlayHints.fontFamily": "PragmataPro",
-    "editor.defaultFoldingRangeProvider": "ms-python.black-formatter",
-    "editor.formatOnSave": true,
-    "editor.bracketPairColorization.enabled": true,
-    "editor.guides.bracketPairs": "active",
-    "search.defaultViewMode": "tree",
-    "debug.inlineValues": "on",
-    "debug.terminal.clearBeforeReusing": true,
-    "debug.autoExpandLazyVariables": "on",
-    "window.density.editorTabHeight": "compact",
-    "window.commandCenter": false,
-    "explorer.compactFolders": false,
+
     "workbench.startupEditor": "none",
     "workbench.productIconTheme": "material-product-icons",
     "workbench.list.openMode": "doubleClick",
@@ -73,8 +69,10 @@
     "workbench.editorAssociations": {"*.dat": "default", "*.db": "default"},
     "workbench.layoutControl.enabled": false,
     "workbench.secondarySideBar.defaultVisibility": "hidden",
+
     "breadcrumbs.showArrays": false,
     "breadcrumbs.enabled": false,
+
     "prettier.semi": true,
     "prettier.singleQuote": true,
     "prettier.jsxSingleQuote": true,
@@ -84,30 +82,41 @@
     "prettier.vueIndentScriptAndStyle": true,
 
     // Git
+    "git.autoRepositoryDetection": "subFolders",
     "git.enableSmartCommit": true,
     "git.confirmSync": false,
     "git.autofetch": true,
-    "git.autoRepositoryDetection": "subFolders",
+
+    // JavaScript
+    "javascript.autoClosingTags": true,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "[javascript]": {"editor.defaultFormatter": "esbenp.prettier-vscode"},
+    "[javascriptreact]": {"editor.defaultFormatter": "esbenp.prettier-vscode"},
 
     // Python
     "python.languageServer": "Pylance",
-    "python.analysis.diagnosticMode": "workspace",
-    "python.analysis.displayEnglishDiagnostics": true,
-    "python.analysis.autoSearchPaths": true,
-    "python.defaultInterpreterPath": "c:\\Program Files\\Python313\\python.exe",
-    "python.createEnvironment.trigger": "off",
-    "python.analysis.importFormat": "absolute",
-    "python.analysis.completeFunctionParens": false,
+    "python.analysis.typeCheckingMode": "off",
     "python.analysis.indexing": true,
-    "python.analysis.inlayHints.callArgumentNames": "off",
+    "python.analysis.importFormat": "absolute",
+    "python.analysis.enablePytestSupport": true,
+    "python.analysis.diagnosticMode": "workspace",
     "python.analysis.inlayHints.variableTypes": false,
     "python.analysis.inlayHints.functionReturnTypes": false,
+    "python.analysis.autoSearchPaths": true,
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.displayEnglishDiagnostics": true,
+    "python.defaultInterpreterPath": "c:\\Program Files\\Python313\\python.exe",
+    "python.createEnvironment.trigger": "off",
+    "python.analysis.completeFunctionParens": false,
+    "python.analysis.inlayHints.callArgumentNames": "off",
+    "python.analysis.packageIndexDepths": [
+        {
+            "name": "django",
+            "depth": 3,
+            "includeAllSymbols": true
+        }
+    ],
     "[python]": {"editor.defaultFormatter": "ms-python.black-formatter"},
-
-    // Additional settings
-    "editor.inlineSuggest.showToolbar": "always",
-    "terminal.integrated.allowedLinkSchemes": ["file", "http", "https", "mailto", "vscode", "vscode-insiders", "docker-desktop"],
-    "files.associations": {"*.json": "jsonc"},
 
     // Themes
     "workbench.colorTheme": "Monokai",
@@ -170,8 +179,6 @@
     },
 
     "html.autoClosingTags": true,
-    "javascript.autoClosingTags": true,
-    "javascript.updateImportsOnFileMove.enabled": "always",
     "typescript.autoClosingTags": true,
 
     "emmet.includeLanguages": {
@@ -199,14 +206,6 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
 
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-
-    "[javascriptreact]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-
     "[vue]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
@@ -229,5 +228,18 @@
 
     "[scss]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+    },
+
+    // Other settings
+    "editor.inlineSuggest.showToolbar": "always",
+    "files.associations": {
+        "*.json": "jsonc",
+        ".pylintrc": "ini"
+    },
+    "search.defaultViewMode": "tree",
+    "debug.inlineValues": "on",
+    "debug.terminal.clearBeforeReusing": true,
+    "debug.autoExpandLazyVariables": "on",
+    "window.density.editorTabHeight": "compact",
+    "window.commandCenter": false
 }

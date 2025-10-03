@@ -1,0 +1,12 @@
+[MESSAGES CONTROL]
+disable = invalid-name,
+		missing-module-docstring,
+		missing-function-docstring,
+		missing-class-docstring,
+		import-outside-toplevel,
+		attribute-defined-outside-init,
+		line-too-long,
+		invalid-str-returned,
+		no-member,
+		disallowed-name,
+		inconsistent-return-statements
