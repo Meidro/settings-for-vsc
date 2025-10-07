@@ -120,8 +120,34 @@
     "[python]": {"editor.defaultFormatter": "ms-python.black-formatter"},
 
     // Themes
-    "workbench.colorTheme": "Monokai",
+    "workbench.colorTheme": "Dracula Theme Soft",
     "editor.tokenColorCustomizations": {
+        "[Dracula Theme Soft]": {
+            "textMateRules": [
+                {
+                    "scope": ["keyword.control", "keyword.operator", "storage.type"],
+                    "settings": {"fontStyle": "italic bold"}
+                },
+                {
+                    "scope": "comment",
+                    "settings": {"foreground": "#8b0000", "fontStyle": "italic"}
+                },
+                {
+                    "scope": "variable.other.readwrite",
+                    "settings": {"foreground": "#e4e4e4", "fontStyle": ""}
+                },
+                {
+                    "scope": ["variable.other", "constant"],
+                    "settings": {"fontStyle": "italic bold"}
+                },
+                {
+                    "scope": "string",
+                    "settings": {"fontStyle": "italic"}
+                }
+            ],
+            "comments": "#8b0000",
+            "variables": "#e4e4e4"
+        },
         "[Monokai]": {
             "textMateRules": [
                 {
@@ -130,7 +156,7 @@
                 },
                 {
                     "scope": "comment",
-                    "settings": {"foreground": "#8b0000", "fontStyle": "italic bold"}
+                    "settings": {"foreground": "#8b0000", "fontStyle": "italic"}
                 },
                 {
                     "scope": "entity.name.type",
@@ -147,18 +173,20 @@
                 {
                     "scope": "constant.numeric",
                     "settings": {"foreground": "#bd93f9", "fontStyle": ""}
+                },
+                {
+                    "scope": "string",
+                    "settings": {"foreground": "#f1fa8c", "fontStyle": "italic"}
                 }
             ],
             "variables": "#e4e4e4",
             "types": "#8be9fd",
             "functions": "#50fa7b",
             "comments": "#8b0000",
-            "numbers": "#bd93f9",
-            "strings": "#f1fa8c"
+            "numbers": "#bd93f9"
         }
     },
 
-    //  [Monokai]
     "workbench.colorCustomizations": {
         "terminal.foreground": "#e5e4e4",
         "terminal.background": "#0e0e0e",
@@ -171,12 +199,12 @@
         "editor.lineHighlightBackground": "#343333",
         "editorCursor.foreground": "#ffcc00",
         "sideBar.background": "#080808",
-        "sideBar.foreground": "#b7c299",
+        "sideBar.foreground": "#e4e4e4",
         "activityBar.background": "#202020",
         "activityBar.foreground": "#cccccc",
         "statusBar.background": "#151515",
         "statusBar.foreground": "#d3d3d3",
-        "editorBracketHighlight.foreground1": "#f1fa8c"
+        "editorBracketHighlight.foreground1": "#e4e4e4"
     },
 
     "html.autoClosingTags": true,
