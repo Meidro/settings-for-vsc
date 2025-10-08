@@ -28,5 +28,3 @@
 -   Python (Microsoft)
 -   Python Debugger (Microsoft)
 -   Python Environments (Microsoft)
--   Vue (Official) (Vue)
--   Vue VSCode Snippets (sarah.drasner)
