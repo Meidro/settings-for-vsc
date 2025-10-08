@@ -5,7 +5,6 @@
 -   Dependency Cruiser Extension (juanallo)
 -   Dracula Theme Official (Dracula Theme)
 -   Django (Baptiste Darthenay)
--   eCSStractor for VSCode (diz)
 -   CSS Peek (Pranay Prakash)
 -   ESLint (Microsoft)
 -   Extension Pack for Java (Microsoft)
