@@ -130,7 +130,7 @@
                 },
                 {
                     "scope": "comment",
-                    "settings": {"foreground": "#8b0000", "fontStyle": "italic"}
+                    "settings": {"fontStyle": "italic"}
                 },
                 {
                     "scope": "variable.other.readwrite",
@@ -145,7 +145,6 @@
                     "settings": {"fontStyle": "italic"}
                 }
             ],
-            "comments": "#8b0000",
             "variables": "#e4e4e4"
         },
         "[Monokai]": {
